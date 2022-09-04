@@ -1,2 +1,2 @@
-# User-Department-Project
+# User-Department-Mini-Project
 A Spring Boot project 
