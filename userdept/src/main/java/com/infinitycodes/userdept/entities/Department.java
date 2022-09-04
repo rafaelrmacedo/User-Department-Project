@@ -11,7 +11,7 @@ import javax.persistence.Table;
 @Table(name = "tb_department") // -- DB table name
 public class Department {
 
-    //Notion for auto_increment on data base
+    //Notion for auto_increment and primary key on data base
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
