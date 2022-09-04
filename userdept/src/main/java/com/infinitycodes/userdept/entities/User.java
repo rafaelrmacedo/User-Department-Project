@@ -8,12 +8,12 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-//Classe que irá ser mapeada para o banco de dados
-@Entity // -- JPA Notation
+//The class that will be mapped on database
+@Entity // -- JPA Anotation
 @Table(name = "tb_user") // -- DB table name
 public class User {
 
-    //Notion for auto_increment on data base
+    //Anotion for auto_increment on data base
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,7 +21,7 @@ public class User {
     private String email;
 
     //user -> department
-    //many to one notation
+    //many to one anotation
     @ManyToOne
     @JoinColumn(name = "department_id") //Foreign key config
     private Department department;
